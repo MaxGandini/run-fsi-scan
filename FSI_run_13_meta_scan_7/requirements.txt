@@ -1,0 +1,10 @@
+numpy  
+shapely  
+scipy 
+polars 
+pyarrow 
+opencv-python
+matplotlib 
+scikit-image 
+plotly 
+pandas
