@@ -1,5 +1,6 @@
 
 import requests 
+import glob
 import json
 import os
 import cv2
@@ -805,10 +806,10 @@ def filter_monitor_manual(image, idx,inferred_parameters):
         2
     )
 
-    current = open_close_repeat(current,ksize=KSIZE,repeats=2)
-    out_dir = TEST_FOLDER / "open_close_repeat"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(out_dir / f"image_{idx}.png"), current)
+    # current = open_close_repeat(current,ksize=KSIZE,repeats=2)
+    # out_dir = TEST_FOLDER / "open_close_repeat"
+    # out_dir.mkdir(parents=True, exist_ok=True)
+    # cv2.imwrite(str(out_dir / f"image_{idx}.png"), current)
 
     out_dir = TEST_FOLDER / "adaptiveThreshold"
     out_dir.mkdir(parents=True, exist_ok=True)
